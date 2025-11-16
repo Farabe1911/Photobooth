@@ -4,6 +4,7 @@ Option 1 (Windows, easiest):
 1. Open this folder in File Explorer.
 2. Double‑click `Run-PhotoBooth.bat`.
 
+
 Option 2 (without the .bat):
 1. Open Command Prompt or PowerShell.
 2. cd to this folder (the one with pom.xml) >cd 'C:\Users\tasni\OneDrive\Desktop\photobooth-1'.
