@@ -1,0 +1,573 @@
+:root {
+  -fx-font-family: "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+.template-bordered {
+  -fx-border-color: linear-gradient(
+    to right,
+    #ff4d4f 0%,
+    #ffeb3b 50%,
+    #4ade80 100%
+  );
+  -fx-border-width: 12;
+  -fx-border-radius: 36;
+  -fx-border-insets: 6;
+}
+
+.template-event-label {
+  -fx-font-size: 46px;
+  -fx-font-weight: 700;
+  -fx-text-fill: rgba(248, 250, 252, 0.95);
+  -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.65), 24, 0.6, 0, 6);
+}
+
+.template-event-script {
+  -fx-font-family: "Great Vibes", "Brush Script MT", cursive;
+  -fx-letter-spacing: 2.4;
+}
+
+.template-event-modern {
+  -fx-font-family: "Montserrat SemiBold", "Segoe UI Semibold", sans-serif;
+  -fx-letter-spacing: 3.6;
+  -fx-text-transform: uppercase;
+}
+
+.template-event-classic {
+  -fx-font-family: "Playfair Display", "Georgia", serif;
+  -fx-letter-spacing: 1.8;
+}
+
+.app-root {
+  -fx-background-color: linear-gradient(
+    to bottom,
+    #0f172a,
+    #111827 55%,
+    #0b1120
+  );
+  -fx-padding: 32 40;
+}
+
+.control-card {
+  -fx-background-color: rgba(15, 23, 42, 0.85);
+  -fx-background-radius: 24;
+  -fx-padding: 24 32 28 32;
+  -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.55), 36, 0.45, 0, 20);
+}
+
+.app-header {
+  -fx-spacing: 6;
+  -fx-alignment: top-left;
+}
+
+.app-title {
+  -fx-font-size: 30px;
+  -fx-font-weight: 700;
+  -fx-text-fill: #f8fafc;
+}
+
+.app-subtitle {
+  -fx-text-fill: #94a3b8;
+  -fx-font-size: 14px;
+}
+
+.label {
+  -fx-text-fill: #e2e8f0;
+}
+
+.field {
+  -fx-spacing: 6;
+  -fx-min-width: 220;
+}
+
+.field-label {
+  -fx-font-size: 12px;
+  -fx-font-weight: 600;
+  -fx-text-fill: #9ca3af;
+  -fx-opacity: 0.95;
+}
+
+.control-flow {
+  -fx-hgap: 18;
+  -fx-vgap: 16;
+}
+
+.setup-body {
+  -fx-spacing: 14;
+}
+
+.setup-scroll {
+  -fx-background-color: transparent;
+  -fx-padding: 0;
+}
+
+.setup-scroll .viewport,
+.setup-scroll .corner {
+  -fx-background-color: transparent;
+}
+
+.text-field,
+.combo-box,
+.combo-box-base,
+.color-picker {
+  -fx-background-color: rgba(30, 41, 59, 0.9);
+  -fx-background-radius: 12;
+  -fx-border-color: rgba(148, 163, 184, 0.28);
+  -fx-border-radius: 12;
+  -fx-text-fill: #e2e8f0;
+  -fx-padding: 10 14;
+}
+
+.text-field:focused,
+.combo-box:focused,
+.color-picker:focused {
+  -fx-border-color: #6366f1;
+  -fx-effect: dropshadow(gaussian, rgba(99, 102, 241, 0.35), 18, 0.45, 0, 10);
+}
+
+.combo-box .list-cell {
+  -fx-text-fill: #0f172a;
+}
+
+.color-picker .label {
+  -fx-text-fill: #e2e8f0;
+}
+
+.frame-selector {
+  -fx-padding: 4 0 0 0;
+}
+
+.frame-card {
+  -fx-background-color: rgba(30, 41, 59, 0.55);
+  -fx-background-radius: 18;
+  -fx-border-radius: 18;
+  -fx-border-color: rgba(148, 163, 184, 0.25);
+  -fx-padding: 14 16;
+  -fx-alignment: top-left;
+  -fx-cursor: hand;
+  -fx-text-fill: transparent;
+}
+
+.frame-card:selected {
+  -fx-border-color: #818cf8;
+  -fx-effect: dropshadow(gaussian, rgba(99, 102, 241, 0.45), 28, 0.55, 0, 16);
+}
+
+.frame-card-icon {
+  -fx-font-size: 24px;
+  -fx-opacity: 0.9;
+}
+
+.frame-card-birthday {
+  -fx-background-color: linear-gradient(
+    to bottom right,
+    rgba(99, 102, 241, 0.65),
+    rgba(236, 72, 153, 0.55)
+  );
+}
+
+.frame-card-wedding {
+  -fx-background-color: linear-gradient(
+    to bottom right,
+    rgba(236, 233, 255, 0.65),
+    rgba(251, 191, 36, 0.45)
+  );
+}
+
+.frame-card-bride {
+  -fx-background-color: linear-gradient(
+    to bottom right,
+    rgba(236, 72, 153, 0.5),
+    rgba(254, 215, 226, 0.6)
+  );
+}
+
+.frame-card-groom {
+  -fx-background-color: linear-gradient(
+    to bottom right,
+    rgba(30, 64, 175, 0.55),
+    rgba(15, 23, 42, 0.65)
+  );
+}
+
+.frame-card-title {
+  -fx-font-size: 16px;
+  -fx-font-weight: 700;
+  -fx-text-fill: #f8fafc;
+}
+
+.frame-card-description {
+  -fx-text-fill: #cbd5f5;
+  -fx-font-size: 12px;
+}
+
+.frame-card-sample {
+  -fx-background-color: rgba(15, 23, 42, 0.55);
+  -fx-background-radius: 12;
+  -fx-padding: 10 12;
+  -fx-text-fill: #f1f5f9;
+  -fx-font-size: 13px;
+  -fx-border-color: rgba(248, 250, 252, 0.25);
+  -fx-border-radius: 12;
+}
+
+.frame-preview-card {
+  -fx-background-color: rgba(30, 41, 59, 0.72);
+  -fx-background-radius: 18;
+  -fx-padding: 16 20;
+  -fx-spacing: 10;
+}
+
+.frame-preview-text {
+  -fx-text-fill: #e2e8f0;
+  -fx-font-size: 16px;
+  -fx-font-weight: 600;
+}
+
+.save-location-label {
+  -fx-text-fill: #cbd5f5;
+  -fx-font-size: 12px;
+  -fx-opacity: 0.85;
+}
+
+.action-bar {
+  -fx-alignment: center-left;
+  -fx-spacing: 12;
+}
+
+.button {
+  -fx-font-size: 14px;
+  -fx-font-weight: 600;
+  -fx-background-radius: 12;
+  -fx-border-radius: 12;
+  -fx-cursor: hand;
+  -fx-border-width: 1;
+  -fx-padding: 10 20;
+  -fx-text-fill: #e2e8f0;
+}
+
+.primary-button {
+  -fx-background-color: linear-gradient(to right, #6366f1, #8b5cf6);
+  -fx-border-color: transparent;
+  -fx-text-fill: white;
+  -fx-effect: dropshadow(gaussian, rgba(99, 102, 241, 0.45), 24, 0.45, 0, 12);
+}
+
+.primary-button:hover {
+  -fx-background-color: linear-gradient(to right, #7c83ff, #a855f7);
+}
+
+.primary-button:pressed {
+  -fx-background-color: linear-gradient(to right, #4f46e5, #7c3aed);
+}
+
+.secondary-button {
+  -fx-background-color: rgba(148, 163, 184, 0.1);
+  -fx-border-color: rgba(148, 163, 184, 0.45);
+}
+
+.secondary-button:hover {
+  -fx-border-color: rgba(148, 163, 184, 0.75);
+  -fx-background-color: rgba(148, 163, 184, 0.22);
+}
+
+.secondary-button:pressed {
+  -fx-background-color: rgba(148, 163, 184, 0.35);
+}
+
+.capture-root {
+  -fx-background-color: linear-gradient(
+    to bottom,
+    #0b1220,
+    #0f172a 48%,
+    #080c1b
+  );
+}
+
+.capture-main {
+  -fx-alignment: top-center;
+  -fx-spacing: 24;
+}
+
+.capture-header {
+  -fx-font-size: 22px;
+  -fx-font-weight: 700;
+  -fx-text-fill: #f8fafc;
+  -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.7), 24, 0.6, 0, 14);
+}
+
+.capture-video-stack {
+  -fx-background-color: #000000;
+  -fx-alignment: center;
+}
+
+.video-view {
+  -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.45), 24, 0.45, 0, 18);
+}
+
+.capture-instruction {
+  -fx-text-fill: #cbd5f5;
+  -fx-font-size: 16px;
+  -fx-font-weight: 600;
+  -fx-text-alignment: center;
+  -fx-background-color: rgba(15, 23, 42, 0.65);
+  -fx-background-radius: 24;
+  -fx-padding: 18 28;
+}
+
+.capture-timer {
+  -fx-font-size: 120px;
+  -fx-font-weight: 800;
+  -fx-text-fill: linear-gradient(to bottom, #ff4d4f, #ffeb3b, #4ade80);
+  -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.75), 32, 0.65, 0, 12);
+}
+
+.capture-thumb-column {
+  -fx-background-color: rgba(15, 23, 42, 0.55);
+  -fx-background-radius: 24;
+  -fx-padding: 24 20;
+  -fx-spacing: 18;
+}
+
+.capture-thumb-slot {
+  -fx-background-color: rgba(30, 41, 57, 0.65);
+  -fx-background-radius: 18;
+  -fx-border-color: transparent;
+  -fx-border-radius: 18;
+  -fx-padding: 6;
+  -fx-alignment: center;
+}
+
+.capture-thumb-slot.capture-thumb-active {
+  -fx-border-color: rgba(129, 140, 248, 0.85);
+  -fx-border-width: 2;
+  -fx-effect: dropshadow(gaussian, rgba(129, 140, 248, 0.45), 26, 0.6, 0, 12);
+}
+
+.capture-thumb-slot.capture-thumb-complete {
+  -fx-border-color: rgba(52, 211, 153, 0.85);
+  -fx-border-width: 2;
+}
+
+.capture-thumb-label {
+  -fx-background-color: rgba(15, 23, 42, 0.72);
+  -fx-text-fill: #cbd5f5;
+  -fx-font-weight: 600;
+  -fx-padding: 6 12;
+  -fx-background-radius: 12;
+}
+
+.template-dialog {
+  -fx-background-color: rgba(15, 23, 42, 0.95);
+  -fx-background-radius: 22;
+  -fx-padding: 24 28 28 28;
+  -fx-spacing: 18;
+  -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.55), 32, 0.45, 0, 20);
+}
+
+.template-title {
+  -fx-font-size: 18px;
+  -fx-font-weight: 700;
+  -fx-text-fill: #f8fafc;
+}
+
+.template-hint {
+  -fx-text-fill: #cbd5f5;
+  -fx-font-size: 12px;
+}
+
+.template-preview-row {
+  -fx-alignment: center;
+  -fx-spacing: 18;
+  -fx-padding: 8 0 12 0;
+}
+
+.template-card {
+  -fx-background-radius: 18;
+  -fx-padding: 12;
+  -fx-spacing: 8;
+  -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.45), 18, 0.35, 0, 12);
+  -fx-cursor: hand;
+}
+
+.template-card.frame-card-birthday {
+  -fx-background-color: rgba(99, 102, 241, 0.2);
+}
+
+.template-card.frame-card-wedding {
+  -fx-background-color: rgba(255, 237, 213, 0.25);
+}
+
+.template-card.frame-card-bride {
+  -fx-background-color: rgba(255, 228, 235, 0.35);
+}
+
+.template-card.frame-card-groom {
+  -fx-background-color: rgba(37, 99, 235, 0.18);
+}
+
+.template-radio {
+  -fx-text-fill: #e2e8f0;
+}
+
+.template-canvas {
+  -fx-background-radius: 32;
+}
+
+.template-canvas-birthday {
+  -fx-background-color: linear-gradient(
+    to bottom right,
+    #1f2937,
+    #312e81,
+    #4338ca
+  );
+}
+
+.template-canvas-wedding {
+  -fx-background-color: linear-gradient(
+    to bottom right,
+    #fdf2f8,
+    #ede9fe,
+    #fff4d6
+  );
+}
+
+.template-canvas-bride {
+  -fx-background-color: linear-gradient(
+    to bottom right,
+    #fff5f7,
+    #fde2f3,
+    #f8bbd0
+  );
+}
+
+.template-canvas-groom {
+  -fx-background-color: linear-gradient(
+    to bottom right,
+    #0f172a,
+    #1e3a8a,
+    #0b1120
+  );
+}
+
+.template-photo {
+  -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.45), 26, 0.45, 0, 10);
+}
+
+.template-headline-bar {
+  -fx-background-radius: 32 32 0 0;
+}
+
+.template-headline {
+  -fx-font-size: 32px;
+  -fx-font-weight: 700;
+  -fx-text-fill: #f8fafc;
+  -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.55), 32, 0.65, 0, 18);
+}
+
+.template-headline-birthday {
+  -fx-background-color: linear-gradient(
+    to right,
+    rgba(99, 102, 241, 0.85),
+    rgba(236, 72, 153, 0.8)
+  );
+}
+
+.template-headline-wedding {
+  -fx-background-color: linear-gradient(
+    to right,
+    rgba(255, 237, 213, 0.9),
+    rgba(244, 114, 182, 0.75)
+  );
+}
+
+.template-headline-bride {
+  -fx-background-color: linear-gradient(
+    to right,
+    rgba(236, 72, 153, 0.85),
+    rgba(255, 209, 220, 0.9)
+  );
+}
+
+.template-headline-groom {
+  -fx-background-color: linear-gradient(
+    to right,
+    rgba(30, 64, 175, 0.85),
+    rgba(15, 23, 42, 0.9)
+  );
+}
+
+.template-statement-bar {
+  -fx-background-radius: 0 0 32 32;
+}
+
+.template-statement {
+  -fx-font-size: 28px;
+  -fx-font-weight: 700;
+  -fx-font-family: "Playfair Display", "Georgia", serif;
+  -fx-letter-spacing: 1.5;
+  -fx-text-fill: #0f172a;
+  -fx-text-alignment: center;
+  -fx-wrap-text: true;
+  -fx-padding: 18 32;
+}
+
+.statement-bar-birthday {
+  -fx-background-color: linear-gradient(
+    to right,
+    rgba(248, 250, 252, 0.92),
+    rgba(224, 231, 255, 0.92)
+  );
+}
+
+.statement-bar-wedding {
+  -fx-background-color: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.95),
+    rgba(255, 242, 220, 0.92)
+  );
+}
+
+.statement-bar-bride {
+  -fx-background-color: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.95),
+    rgba(255, 228, 235, 0.9)
+  );
+}
+
+.statement-bar-groom {
+  -fx-background-color: linear-gradient(
+    to right,
+    rgba(30, 41, 59, 0.95),
+    rgba(17, 24, 39, 0.92)
+  );
+}
+
+.statement-bar-groom .template-statement {
+  -fx-font-size: 28px;
+  -fx-font-weight: 700;
+  -fx-font-family: "Playfair Display", "Georgia", serif;
+  -fx-letter-spacing: 1.5;
+  -fx-text-fill: #0f172a;
+  -fx-text-alignment: center;
+  -fx-wrap-text: true;
+  -fx-padding: 18 32;
+}
+
+.overlay-start-button {
+  -fx-font-size: 20px;
+  -fx-padding: 18 36;
+  -fx-background-radius: 28;
+  -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.6), 28, 0.6, 0, 8);
+}
+
+.capture-thumb-title {
+  -fx-font-size: 16px;
+  -fx-font-weight: 600;
+  -fx-text-fill: #f8fafc;
+  -fx-opacity: 0.85;
+}
+
+.capture-thumb-list {
+  -fx-spacing: 12;
+}
